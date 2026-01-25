@@ -11,27 +11,21 @@ This project implements a **Convolutional Neural Network (CNN)** to classify ima
 - Frameworks: TensorFlow / Keras  
 - Approach: Custom CNN built and trained from scratch  
 
-The notebook covers the complete pipeline:
-1. Dataset download  
-2. Image loading and preprocessing  
-3. Label encoding  
-4. CNN model creation  
-5. Model training and evaluation  
+The notebook covers the complete pipeline including dataset download, image preprocessing, label encoding, CNN model construction, training, and evaluation.
 
 ---
 
 ## 🗂 Dataset
 
-The dataset is automatically downloaded from TensorFlow’s official source.
+The dataset is automatically downloaded from TensorFlow’s official source and contains five flower categories:
 
-### Flower Categories:
 - Daisy  
 - Dandelion  
 - Roses  
 - Sunflowers  
 - Tulips  
 
-Each class contains multiple RGB images of flowers.
+Each category consists of multiple RGB images.
 
 ---
 
@@ -48,11 +42,7 @@ Each class contains multiple RGB images of flowers.
 
 ## 🧠 Model Architecture
 
-The CNN model consists of:
-- Convolutional layers for feature extraction  
-- Pooling layers to reduce spatial dimensions  
-- Fully connected (Dense) layers for classification  
-- Softmax output layer for multi-class prediction  
+The CNN model is composed of convolutional layers for feature extraction, pooling layers to reduce spatial dimensions, fully connected dense layers for classification, and a softmax output layer for multi-class prediction.
 
 ---
 
@@ -60,11 +50,9 @@ The CNN model consists of:
 
 Clone the repository:
 
-```bash  
+```bash
 git clone https://github.com/your-username/flower-classification-cnn.git
 cd flower-classification-cnn
-
-
 Install dependencies:
 
 pip install tensorflow opencv-python pillow matplotlib numpy
@@ -74,30 +62,17 @@ Run the notebook:
 
 jupyter notebook Flowers_dataset_CNN.ipynb
 
-**## 🚀 How It Works**
 
-Downloads and extracts the flower dataset automatically
+🚀 ## Workflow, Results, and Observations
 
-Reads images using OpenCV and converts them to RGB format
+The project automatically downloads and extracts the flower dataset, reads images using OpenCV, converts them into RGB format, and assigns numeric labels to each flower category. The images are preprocessed and fed into a custom-built Convolutional Neural Network, which is trained to learn discriminative visual features from the dataset. After training, the model is evaluated on the dataset and is able to classify flower images into their respective categories with reasonable accuracy. The final performance may vary depending on factors such as training configuration, number of epochs, and hardware used.
 
-Assigns numeric labels to each flower category
+📌 ## Future Improvements
 
-Trains a CNN on the image dataset
+Data augmentation for better generalization
 
-Evaluates model performance
+Transfer learning using pretrained models such as ResNet or MobileNet
 
----
+Hyperparameter tuning
 
-## 📊 Results
-
-The trained CNN is able to classify flower images into their respective categories with reasonable accuracy.  
-*(Exact performance may vary depending on training configuration and hardware.)*
-
----
-
-## 📌 Future Improvements
-
-- Data augmentation for better generalization  
-- Transfer learning using pretrained models (ResNet, MobileNet)  
-- Hyperparameter tuning  
-- Model saving and inference pipeline  
+Model saving and inference pipeline
