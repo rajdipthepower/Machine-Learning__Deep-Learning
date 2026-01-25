@@ -88,24 +88,16 @@ Evaluates model performance
 
 ---
 
+## 📊 Results
 
-**📊 Results**
-
-The trained CNN is able to classify flower images into their respective categories with reasonable accuracy.
-(Exact performance may vary depending on training configuration and hardware.)
-
+The trained CNN is able to classify flower images into their respective categories with reasonable accuracy.  
+*(Exact performance may vary depending on training configuration and hardware.)*
 
 ---
 
+## 📌 Future Improvements
 
-**📌 Future Improvements**
-
-Data augmentation for better generalization
-
-Transfer learning using pretrained models (ResNet, MobileNet)
-
-Hyperparameter tuning
-
-Model saving and inference pipeline
-
-
+- Data augmentation for better generalization  
+- Transfer learning using pretrained models (ResNet, MobileNet)  
+- Hyperparameter tuning  
+- Model saving and inference pipeline  
