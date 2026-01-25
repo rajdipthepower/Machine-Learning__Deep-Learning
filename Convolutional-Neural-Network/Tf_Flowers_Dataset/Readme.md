@@ -74,7 +74,7 @@ Run the notebook:
 
 jupyter notebook Flowers_dataset_CNN.ipynb
 
-🚀 How It Works
+**## 🚀 How It Works**
 
 Downloads and extracts the flower dataset automatically
 
@@ -86,12 +86,12 @@ Trains a CNN on the image dataset
 
 Evaluates model performance
 
-📊 Results
+**📊 Results**
 
 The trained CNN is able to classify flower images into their respective categories with reasonable accuracy.
 (Exact performance may vary depending on training configuration and hardware.)
 
-📌 Future Improvements
+**📌 Future Improvements**
 
 Data augmentation for better generalization
 
