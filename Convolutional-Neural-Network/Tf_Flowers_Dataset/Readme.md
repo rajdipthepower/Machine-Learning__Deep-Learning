@@ -86,10 +86,17 @@ Trains a CNN on the image dataset
 
 Evaluates model performance
 
+---
+
+
 **📊 Results**
 
 The trained CNN is able to classify flower images into their respective categories with reasonable accuracy.
 (Exact performance may vary depending on training configuration and hardware.)
+
+
+---
+
 
 **📌 Future Improvements**
 
