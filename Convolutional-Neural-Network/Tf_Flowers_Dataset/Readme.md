@@ -1,74 +1,72 @@
-Here is a README.md file generated based on the content of your Jupyter Notebook, Flowers_dataset_CNN.ipynb.
+# 🌸 Flower Image Classification using CNN
 
-Flower Image Classification using CNN
-This project implements a Convolutional Neural Network (CNN) to classify images of flowers using the TensorFlow Flower Dataset. The model is built using TensorFlow and Keras and is designed to recognize five different types of flowers.
-
-🚢 Dataset
-The project uses the official TensorFlow Flower Photos dataset. The dataset contains 3,670 photos of flowers belonging to five classes:
-
-Daisy
-
-Dandelion
-
-Roses
-
-Sunflowers
-
-Tulips
-
-🛠️ Requirements
-To run this notebook, you will need the following Python libraries:
-
-tensorflow
-
-numpy
-
-matplotlib
-
-opencv-python (cv2)
-
-pillow (PIL)
-
-You can install the necessary dependencies using pip:
-
-Bash
-
-pip install tensorflow pillow matplotlib opencv-python numpy
-🚀 Project Workflow
-Environment Setup: Importing necessary libraries such as TensorFlow, NumPy, and Matplotlib.
-
-Data Acquisition: Downloading and extracting the flower dataset directly from Google Storage.
-
-Data Exploration: Iterating through the directory structure and displaying sample images from each category (Daisy, Tulips, Sunflowers, Roses, Dandelion).
-
-Preprocessing (Detailed in notebook): Preparing the images for the CNN model.
-
-Model Architecture (Detailed in notebook): Defining the layers of the Convolutional Neural Network.
-
-Training and Evaluation: Training the model on the flower images and evaluating its performance.
-
-📊 Sample Data Visualization
-The notebook includes code to load and display representative images from each of the five flower classes to verify the dataset integrity before training.
-
-💻 Usage
-Open the Flowers_dataset_CNN.ipynb in Google Colab or a local Jupyter environment.
-
-Ensure you have a GPU enabled for faster training (the notebook is configured for Colab T4 GPU).
-
-Run the cells sequentially to download the data, build the model, and view classification results.
-🚀 ## Workflow, Results, and Observations
-
-The project automatically downloads and extracts the flower dataset, reads images using OpenCV, converts them into RGB format, and assigns numeric labels to each flower category. The images are preprocessed and fed into a custom-built Convolutional Neural Network, which is trained to learn discriminative visual features from the dataset. After training, the model is evaluated on the dataset and is able to classify flower images into their respective categories with reasonable accuracy. The final performance may vary depending on factors such as training configuration, number of epochs, and hardware used.
+This project implements a **Convolutional Neural Network (CNN)** to classify images of flowers into five distinct categories. Built with **TensorFlow** and **Keras**, it is optimized for **Google Colab** using **GPU (T4)** acceleration.
 
 ---
 
+## 📁 Dataset Information
+The project utilizes the official **TensorFlow Flower Photos dataset**.
+* **Total Images:** ~3,670
+* **Categories:** * **Daisy**
+  * **Dandelion**
+  * **Roses**
+  * **Sunflowers**
+  * **Tulips**
 
-📌 ## Future Improvements
+The dataset is programmatically downloaded and extracted from Google's public storage during execution.
 
-Data augmentation for better generalization
+---
 
-Transfer learning using pretrained models such as ResNet or MobileNet
+## 🛠️ Technology Stack
+* **Framework:** **TensorFlow / Keras**
+* **Image Processing:** **OpenCV** (`cv2`), **Pillow** (`PIL`)
+* **Data Handling:** **NumPy**, **Pathlib**
+* **Visualization:** **Matplotlib**
 
-Hyperparameter tuning
+---
 
-Model saving and inference pipeline
+## 🚀 Key Features
+* **Automated Pipeline:** Automatic downloading and extraction of `.tgz` datasets.
+* **Data EDA:** Visual verification of classes using directory mapping and sample plotting.
+* **Hardware Optimized:** Pre-configured for **NVIDIA T4 GPU** acceleration in Colab.
+* **Efficient Pre-processing:** High-speed image-to-array conversion via OpenCV for training readiness.
+
+---
+
+## 📊 Project Workflow
+1.  **Library Imports:** Loading essential tools like `tensorflow`, `numpy`, and `cv2`.
+2.  **Data Acquisition:** Programmatically fetching the `.tgz` flower dataset.
+3.  **Data Exploration:** Using `Path.iterdir()` to map categories and verify image counts.
+4.  **Pre-processing:** Scaling, resizing, and reshaping image arrays for the model.
+5.  **CNN Architecture:** Building a deep learning model with convolutional, pooling, and dense layers.
+
+---
+
+## 💻 Installation & Usage
+
+### 1. Prerequisites
+Open this project in **Google Colab** and ensure the **Runtime type** is set to **GPU**.
+
+### 2. Install Dependencies
+pip install tensorflow pillow matplotlib opencv-python numpy
+
+### **3. Running the Project**
+
+* **Clone the Repository:**
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+  
+* **Launch the Notebook:** Open `Flowers_dataset_CNN.ipynb`.
+* **Execute Cells:** Run the cells in sequence. The notebook will:
+    1. Initialize the environment and install **Pillow**.
+    2. Download the **flower_photos.tgz** dataset.
+    3. Map and display flower categories.
+    4. Build, train, and evaluate the **CNN model**.
+
+
+
+---
+
+### **📁 Project Structure**
+
+├── Flowers_dataset_CNN.ipynb  # Main Notebook containing code & analysis
+└── README.md                  # Project documentation
