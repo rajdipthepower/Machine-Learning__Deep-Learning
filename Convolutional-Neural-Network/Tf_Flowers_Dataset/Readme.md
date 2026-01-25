@@ -68,5 +68,7 @@ pip install tensorflow pillow matplotlib opencv-python numpy
 
 ### **📁 Project Structure**
 
+```text
 ├── Flowers_dataset_CNN.ipynb  # Main Notebook containing code & analysis
+
 └── README.md                  # Project documentation
