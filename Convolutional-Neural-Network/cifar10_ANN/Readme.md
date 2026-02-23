@@ -5,10 +5,6 @@ This repository contains a prototype study of image classification on the CIFAR-
 ## 🔬 Research Insight (Why this project?)
 While many projects focus only on high accuracy, this prototype investigates the **limitations of traditional neural architectures** when dealing with high-dimensional RGB data. 
 
-This analysis is highly relevant to:
-* **Sustainable AI (Dr. Ayon Borthakur):** Exploring how structural bias in models affects parameter efficiency.
-* **Computer Vision (Dr. Teena Sharma):** Understanding why standard architectures struggle with non-stationary image data without convolutional priors.
-
 ## 🛠️ Technical Workflow
 
 ### 1. Data Processing
@@ -31,5 +27,3 @@ This analysis is highly relevant to:
 * **Framework:** TensorFlow / Keras
 * **Libraries:** NumPy, Matplotlib, Scikit-learn
 
----
-*This prototype serves as a foundational study in architectural efficiency for the Mehta Family School of Data Science and AI.*
