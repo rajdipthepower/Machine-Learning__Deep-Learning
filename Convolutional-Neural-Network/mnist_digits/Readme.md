@@ -2,12 +2,6 @@
 
 This repository features a comprehensive deep learning pipeline for image classification using the MNIST dataset. The project focuses on a comparative study between standard Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN), emphasizing spatial feature extraction and architectural efficiency.
 
-## 🔬 Research Alignment
-This implementation is designed to showcase core competencies relevant to the faculty research interests at MFSDS&AI, IIT Guwahati:
-* **Computer Vision & Identification:** Direct application of CNNs for image classification and recognition (Target: **Dr. Teena Sharma**).
-* **Biomedical Image Analysis:** Utilizing deep learning for high-precision classification tasks (Target: **Dr. Debanga Raj Neyog**).
-* **Interaction & Perception:** Exploring how AI models interpret visual signals (Target: **Dr. Neeraj Sharma**).
-
 ## 🛠️ Technical Workflow
 
 ### 1. Data Pipeline
@@ -31,5 +25,3 @@ This implementation is designed to showcase core competencies relevant to the fa
 * **Framework:** Keras / TensorFlow (GPU Accelerated)
 * **Libraries:** NumPy, Matplotlib, Scikit-learn
 
----
-*Curated for application to the Mehta Family School of Data Science and Artificial Intelligence, IIT Guwahati.*
